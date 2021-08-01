@@ -8,6 +8,8 @@ import javax.validation.constraints.NotEmpty;
 import com.fasterxml.jackson.annotation.JsonFormat;
 
 import br.com.caio.os.domain.OS;
+import br.com.caio.os.domain.enuns.Prioridade;
+import br.com.caio.os.domain.enuns.Status;
 
 public class OSDTO implements Serializable {
 
@@ -73,8 +75,8 @@ public class OSDTO implements Serializable {
 		this.dataFechamento = dataFechamento;
 	}
 
-	public Integer getPrioridade() {
-		return prioridade;
+	public Prioridade getPrioridade() {
+		return Prioridade.toEnum(this.prioridade);
 	}
 
 	public void setPrioridade(Integer prioridade) {
@@ -89,8 +91,8 @@ public class OSDTO implements Serializable {
 		this.observacao = observacao;
 	}
 
-	public Integer getStatus() {
-		return status;
+	public Status getStatus() {
+		return Status.toEnum(this.status);
 	}
 
 	public void setStatus(Integer status) {

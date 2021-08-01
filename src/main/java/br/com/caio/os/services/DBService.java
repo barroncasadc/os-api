@@ -28,9 +28,9 @@ public class DBService {
 
 	public void instanciaDB() {
 
-		Tecnico t1 = new Tecnico(null, "Caio Barroncas", "012.369.882-05", "(92) 7777-7777");
-		Tecnico t2 = new Tecnico(null, "Cesar Augusto", "001.356.012-31", "(92) 8888-8888");
-		Cliente c1 = new Cliente(null, "Betina Campos", "441.237.102-63", "(92) 9999-9999");
+		Tecnico t1 = new Tecnico(null, "Caio Barroncas", "595.314.550-07", "(92) 7777-7777");
+		Tecnico t2 = new Tecnico(null, "Cesar Augusto", "879.863.730-40", "(92) 8888-8888");
+		Cliente c1 = new Cliente(null, "Betina Campos", "315.029.790-71", "(92) 9999-9999");
 
 		OS os1 = new OS(null, Prioridade.ALTA, "Teste Create OS", Status.ANDAMENTO, t1, c1);
 
